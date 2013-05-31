@@ -5,6 +5,6 @@ by Georg Lang
 
 Implemetation of a JS Mp3 Player with AngularJS. Songs in tracklist are dragable.
 
-clone the repo
-add tracks to assets/
-add trackinfos to assets/tracklist.json
+1. clone the repo;
+2. add tracks to assets/;
+3. add trackinfos to assets/tracklist.json;
