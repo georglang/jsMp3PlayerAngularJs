@@ -1,0 +1,47 @@
+{
+	"tracks": [
+		{
+			"url" : "assets/track1.mp3",
+			"title" : "01 Fahrenheit fair enough",
+			"artist" : "Telephone Tel Aviv",
+			"genre": "Electronic",
+			"album" : "Telephone Tel Aviv"
+		},
+		{
+			"url" : "assets/track2.mp3",
+			"title" : "02 ttv",
+			"artist" : "Telephone Tel Aviv",
+			"genre" : "Electronic",
+			"album" : "Fahrenheit fair enough"
+		},
+		{
+			"url" : "assets/track3.mp3",
+			"title" : "03 lotus above water",
+			"artist" : "Telephone Tel Aviv",
+			"genre" : "Electronic",
+			"album" : "Fahrenheit fair enough"
+		},
+		{
+			"url" : "assets/track4.mp3",
+			"title" : "04 john thomas on the inside is noth",
+			"artist" : "Telephone Tel Aviv",
+			"genre" : "Electronic",
+			"album" : "Fahrenheit fair enough"
+		},
+		{
+			"url" : "assets/track5.mp3",
+			"title" : "05 life is all about taking things i",
+			"artist" : "Telephone Tel Aviv",
+			"genre" : "Electronic",
+			"album": "Fahrenheit fair enough"
+		},
+		{
+			"url" : "assets/track6.mp3",
+			"title" : "06 your face reminds me of when i was young",
+			"artist" : "Telephone Tel Aviv",
+			"genre" : "Electronic",
+			"album" : "Fahrenheit fair enough"
+		}
+
+	]
+}

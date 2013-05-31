@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="player">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="vendor/normalize.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+</head>
+<body>
+<script type="text/ng-template" id="template/analogClockTemplate.html">
+	<div class="clock">
+		<div ng-click="handleClick()" class="hour-hand" style="-webkit-transform: rotate({{degHours}}deg)"></div>
+		<div class="minute-hand" style="-webkit-transform: rotate({{degMinutes}}deg)"></div>
+		<div class="second-hand animated-hand" style="-webkit-transform: rotate({{degSeconds}}deg)"></div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="template/playerControls.html">
+	<div>
+	<div id="controlElements">
+		<div id="playerControlsView">
+			<div id="controlButtons" class="btn-group"> 
+				<button id="prev"<a class="btn" ng-click="prevTrack()" href="#"><i class="icon-step-backward"></i></a></button>
+				<button id="play" <a class="btn" ng-click="playactive()" href="#"><i class="icon-play"></i></a></button> 
+				<button id="pause"<a class="btn" ng-click="pauseactive()" href="#"><i class="icon-pause"></i></a></button>
+				<button id="stop"<a class="btn" ng-click="stopactive()" href="#"><i class="icon-stop"></i></a></button>
+				<button id="next" <a class="btn" ng-click="nextTrack()" href="#"><i class="icon-step-forward"></i></a></button>
+				<button class="btn" ng-click="shuffleSong()" ng-click="shuffleactive()" id="shuffle" href="#"><i class=" icon-random" ></i></button>
+				
+			</div>
+		</div> <!-- End playersControlsView -->
+	</div> <!-- End controlElements -->
+
+</script>
+
+<script type="text/ng-template" id="template/timeline.html">
+	<div id="timelineView">
+		<div id="timeline" class="slider" data-value="0" data-min="0" data-max="1"></div>
+        <div id="timeWrapper">
+        <div id="remaningTime"></div>
+        <div id="currentTime"></div>
+        <div style="clear:both;"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="template/volumeSlider.html">
+	<div id="volumeSliderView">
+		<img class="speaker" src="assets/img/speaker.png"> 
+		<div id="volumeSlider" class="slider volume" data-value="1" data-min="0" data-max="1"></div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="template/tracklistinfo.html">
+	 <div id="trackInfoView">
+        <div id="trackInfo">
+            <div class="marquee"></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="template/tracklist.html">
+	<div id="tracklistView">
+        <div id="tracklist"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="template/dragableItem.html">
+	<div>
+	</div>
+</script>
+
+	<div ng-controller="PlayerCtrl">
+		<div id="mp3player">
+			<tracklistinfo>
+			</tracklistinfo>
+			<timeline>
+			</timeline>
+			<tracklist>
+			</tracklist>
+			<dragableitem>
+			</dragableitem>
+
+			<div id="controlElements">
+				<playercontrols></playercontrols>
+		        <volumeslider></volumeslider>
+		        <div style="clear:both;"></div>
+		    </div>
+		</div>
+	</div>
+
+<script src="vendor/jquery-2.0.0.min.js"></script>
+<script src="vendor/angular.js"></script>
+<script src="js/main.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/views.js"></script>
+<script src="js/slider.js"></script>
+<script src="vendor/underscore-1.3.3.js"></script>
+
+</body>
+</html>

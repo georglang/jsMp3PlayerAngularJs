@@ -1,0 +1,318 @@
+body {
+}
+
+.slider {
+    width: 300px;
+    height: 20px;
+    position: relative;
+}
+.vSlider {
+    width: 20px;
+    height: 120px;
+    position: relative;
+}
+
+.narrow {
+    width: 180px;
+}
+
+.thumb {
+    width:20px;
+    height:20px;
+    background: #333333;
+    position: absolute;
+    top: 0;
+}
+
+.thumb.down {
+    background: red;
+}
+
+.track {
+    width:100%;
+    height:100%;
+    background: #a9a9a9;
+}
+
+.container {
+    left: 40px;
+    position:relative;
+}
+
+#timelineView{
+    margin-top:80px;
+    margin-bottom:40px;
+}
+
+#timeline{
+    margin-left:24px;
+}
+
+#trackInfoView{
+ padding-top:20px;
+ margin-top: 20px;
+ height:40px;
+ font-size: 120%;
+ font-family:Verdana;
+ font-weight: bold;
+}
+
+.activeTrack{
+    background-color:#CECECE;
+}
+
+#mp3player{
+    width: 940px;
+    margin:auto;
+    background-color: #F0F0F0;
+    -webkit-box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 6px rgba(50, 50, 50, 0.75);
+}
+
+#tracklistView{
+    float:right;
+    margin-right:4%;
+}
+
+#controlButtons{
+
+}
+
+
+
+#controlElements{
+    width: 65%;
+    margin-top: 89px;
+    margin-left: 24px;
+}
+
+#controlElements .slider{
+    margin-left:14%;
+    margin-top:-2%;
+}
+
+#volumeSliderView .thumb{
+    margin-top:20px;
+
+}
+
+#playerControlsView{
+ float:left;
+}
+
+#volumeSlider{
+ float:left;
+ width:20%;
+}
+
+#volumeSlider .track{
+    margin-top:20px;
+}
+
+
+
+#timeline{
+    width:400px;
+    margin-top:20px;
+}
+
+#tracklist{
+    width: 330px;
+    margin-top: -128px;
+    margin-right: 11px;
+    width: : 99px;
+    padding: 2%;
+    margin-bottom:11%;
+    -webkit-box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 6px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 6px rgba(50, 50, 50, 0.75);
+}
+
+.singleTrack{
+    margin-top:4%;
+    margin-bottom: 4%;
+    padding-top:2%;
+    padding-top:2%;
+    cursor: move;
+}
+
+.singleTrack{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.singleTrack.over {
+  border-top:1px solid black;
+}
+
+#timeWrapper{
+    height: 21px;
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+#currentTime{
+    float:right;
+    margin-right:5px;
+}
+
+#remaningTime{
+    float:right;
+    width:20%;
+}
+
+.marquee{
+-webkit-marquee: auto medium infinite scroll normal;
+overflow-x: -webkit-marquee;
+background-color: #F0F0F0;
+-webkit-box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.75);
+-moz-box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.75);
+box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.75);
+height: 50px;
+margin-top: -20px;
+padding-top: 12px;
+
+}
+
+.insertBefore{
+    border-top:1px solid black;
+}
+
+.insertAfter{
+    border-bottom:1px solid black;
+}
+
+.speaker{
+    width: 30px;
+    margin-left: 11px;
+    margin-top: 1px;
+}
+
+
+
+
+
+.hSlider {
+    width: 300px;
+    height: 20px;
+    position: relative;
+}
+.vSlider {
+    width: 20px;
+    height: 120px;
+    position: relative;
+}
+
+.narrow {
+    width: 180px;
+}
+
+.thumb {
+    width:20px;
+    height:20px;
+    background-color:#808080;
+    position: absolute;
+    top: 0;
+    border-top-color:green;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.thumb.down {
+    background: red;
+}
+
+.track {
+    width:100%;
+    height:100%;
+    margin-top:10%;
+    background: #a9a9a9;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0 none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.4) inset;
+    outline: medium none;
+    position: relative;
+}
+
+.container {
+    left: 40px;
+    position:relative;
+}
+
+section{
+    margin-top:4%;
+}
+
+#latestChange{
+    font-size:120%;
+    font-weight:bold;
+}
+ /*
+.tooltip{
+    margin-top:-40px;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background: green;
+    color: white;
+    font-size: 13px;
+    z-index: 20;
+    text-align: center;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+}  */
+.tooltip {
+    position: relative;
+    background-color:#ffdc73;
+    margin-top:-40px;
+    height:30px;
+    width:80px;
+    text-align:center;
+    width:80px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:5px 1px 25px #9C9C9C;
+
+
+
+}
+
+.tooltip:after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: #ffdc73 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+    bottom:-19px;
+    left:2px;
+}
+
+.vSlider .tooltipOutput{
+    position:absolute;
+    left:30px;
+    margin-top:0;
+}
+
+.vSlider .tooltipOutput:after {
+    position: absolute;
+    display: block;
+    border-color: #ffdc73 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+    bottom:3px;
+    left:-10px;
+}
